@@ -1,8 +1,8 @@
 import express from 'express'
-import feeRouter from './studentsRoute.js'
+import feeRouter from './studentsRouter.js'
 const app = express()
 
-app.use(json())
+app.use(express.json())
 
 app.use('/fee', feeRouter)
 

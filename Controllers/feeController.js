@@ -36,8 +36,21 @@ const createStudent = async(req, res)=>{
     } catch (error) {
         return res.json({error})
     }
+
+    // const getAllStudents = async (req,res)=>{
+    //     try {
+    
+    //         const pool = await (mssql.connect(sqlConfig))
+    
+    //         const students = (await pool.request().execute('getAllStudents')).recordset
+    //         res.json({all_students: students})
+    //     } catch (error) {
+    //         return res.json({error})
+    //     }
+    // }
 }
 
 module.exports ={
     createStudent
+    
 }
