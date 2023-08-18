@@ -1,0 +1,8 @@
+POST http://localhost:4300/fee
+Content-Type: application/json
+
+{
+    "student_name": "Dan Kagwa",
+    "class":"form four",
+    "fee":"20,000",
+}
